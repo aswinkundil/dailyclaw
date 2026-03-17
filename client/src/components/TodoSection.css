@@ -1,0 +1,8 @@
+.todo-section .todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.todo-item.done {
+  opacity: 0.6;
+}

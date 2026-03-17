@@ -1,0 +1,75 @@
+.hydration-section .hydration-visual {
+  margin-bottom: var(--space-4);
+}
+
+.water-bar-container {
+  background: var(--bg-input);
+  border-radius: var(--radius-full);
+  height: 28px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: var(--space-2);
+}
+
+.water-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8, #7dd3fc);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-slow);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: var(--space-3);
+  min-width: 40px;
+}
+
+.water-bar-label {
+  font-size: var(--font-xs);
+  font-weight: 700;
+  color: #0c4a6e;
+}
+
+.hydration-target {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.glass-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+  margin-bottom: var(--space-4);
+}
+
+.glass-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: var(--bg-input);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.glass-btn:hover {
+  border-color: var(--water);
+  transform: scale(1.1);
+}
+.glass-btn.filled {
+  background: var(--water-soft);
+  border-color: var(--water);
+}
+.glass-btn .glass-icon {
+  line-height: 1;
+}
+
+.hydration-controls {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+}

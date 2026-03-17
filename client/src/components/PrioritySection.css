@@ -1,0 +1,24 @@
+.priority-section .priority-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.priority-item {
+  position: relative;
+}
+.priority-item.done {
+  opacity: 0.6;
+}
+.priority-number {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: var(--radius-full);
+  font-size: var(--font-xs);
+  font-weight: 700;
+  flex-shrink: 0;
+}
